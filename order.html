@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Sandeep's Sweet Scoops</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            background: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(168, 49, 67, 0.2);
+        }
+        .menu-item1 {
+            background: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(168, 49, 67, 0.2);
+        }
+
+
+        .menu-item img {
+            width: 80%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .menu-item1 img {
+            width: 80%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+
+        .menu-item h3 {
+            margin: 10px 0 5px;
+            color: #42347c;
+        }
+        .menu-item1 h3 {
+            margin: 10px 0 5px;
+            color: #42347c;
+        }
+
+        .menu-item1 p {
+            margin: 5px 0;
+            font-weight: bold;
+            color: #814873;
+        }
+        .menu-item p {
+            margin: 5px 0;
+            font-weight: bold;
+            color: #814873;
+        }
+
+        .order-btn {
+            background: #633b58;
+            color: white;
+            border: none;
+            padding: 10px 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .order-btn:hover {
+            background: #e9a207;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍦 Sandeep’s Creamy Delights</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+</nav>
+
+<section>
+    <h2>Order Your Favorite Ice Cream</h2>
+    <p>Select your favorite flavor and enjoy the sweetness!</p>
+
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBgIoSm8wGUVBmnZ9AjOflrCu0ycqUObRhVw&s" alt="Vanilla Ice Cream">
+            <h3>Vanilla Dream</h3>
+            <p>₹80</p>
+            <!-- <button class="order-btn">Order Now</button> -->
+        </div>
+
+        <div class="menu-item1">
+            <img src="https://www.yummyfoodrecipes.com/resources/picture/org/Tasty-Chocolate-Ice-Cream.jpg" alt="Chocolate Ice Cream">
+            <h3>Chocolate Bliss (Special)</h3>
+            <p>₹90</p>
+            <button class="order-btn">Order Now</button>
+        </div>
+
+        <div class="menu-item" width="100px">
+            <img src="data:image/jpeg;base64,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" alt="Strawberry Ice Cream">
+            <h3>Strawberry Swirl</h3>
+            <p>₹85</p>
+            <!-- <button class="order-btn">Order Now</button> -->
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i0.wp.com/s.lightorangebean.com/media/20240914141651/Easy-Mango-Coconut-Ice-Cream_done.png?resize=500%2C500&quality=80&ssl=1" alt="Mango Ice Cream">
+            <h3>Mango Magic</h3>
+            <p>₹95</p>
+            <!-- <button class="order-btn">Order Now</button> -->
+        </div>
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvr7W6gOj73yUxHXZ4BwIobkWliKID7buiFQ&s" alt="Butterscotch Ice Cream">
+            <h3>Butterscotch Crunch</h3>
+            <p>₹100</p>
+            <!-- <button class="order-btn">Order Now</button> -->
+        </div>
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0HbqHLokIWtq_IO9sZWqpHh22k2gv1a3IzQ&s" alt="Pistachio Ice Cream" width="80%">
+            <h3>Pistachio Paradise</h3>
+            <p>₹110</p>
+            <!-- <button class="order-btn">Order Now</button> -->
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p><marquee dir="ltr">&copy; 2025 Sandeep's Creamy Delights Ice Cream Shop &phone; 7675077039</marquee></p>
+</footer>
+
+</body>
+</html>

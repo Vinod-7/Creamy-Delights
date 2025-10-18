@@ -1,0 +1,69 @@
+/* Common CSS for all pages */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-image:url(./bk.jpg);
+    background-repeat: no-repeat;             
+    background-size: cover;              
+    background-position: center;                
+    background-attachment: fixed;
+
+}
+
+header {
+    background-color: #d90cba;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #28e4b5;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #13d647;
+}
+
+section {
+    background:grey;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 107, 129, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    /* background:#1409de; */
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Menu page styling */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    border-bottom: 1px solid #ffccd2;
+    padding-bottom: 5px;
+}
+
+.menu-item span {
+    font-weight: bold;
+    color: #333;
+}
